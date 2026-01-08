@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form action="/api/v1/here" method="post">
+    <!-- TEXTUAL INPUTS -->
+    <h1>Textual Inputs</h1>
+    <label for="text">Text</label>
+    <input id="text" type="text" name="text" placeholder="text" required>
+    
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password" placeholder="password" minlength="14" required>
+    
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" placeholder="email" required>
+    
+    <label for="date">Date</label>
+    <input id="date" type="date" name="date" required>
+    
+    <label for="tel">Tel</label>
+    <input id="tel" type="tel" name="tel" placeholder="tel" maxlength="11">
+    
+    <label for="number">Number</label>
+    <input id="number" type="number" name="number" placeholder="number" min="20">
+    
+    <!-- BINARY INPUTS -->
+    <h1>Binary Inputs</h1>
+    <input id="checkbox-1" type="checkbox" name="checkbox-1" >
+    <label for="checkbox-1">Checkbox 1</label>
+
+    <input id="checkbox-2" type="checkbox" name="checkbox-2" >
+    <label for="checkbox-2">Checkbox 2</label>
+
+    <input id="checkbox-3" type="checkbox" name="checkbox-3" >
+    <label for="checkbox-3">Checkbox 3</label>
+    
+    <input id="radio-1" type="radio" name="radio" value="r1">
+    <label for="radio-1">Radio 1</label>
+
+    <input id="radio-2" type="radio" name="radio" value="r2">
+    <label for="radio-2">Radio 2</label>
+    
+    <!-- FILE INPUT -->
+    <h1>File Input</h1>
+    <label for="file">File</label>
+    <input id="file" type="file" name="file" >
+    
+    <!-- MISCELLANEOUS INPUTS -->
+    <h1>Miscellaneous Inputs</h1>
+    <label for="range">Range</label>
+    <input id="range" type="range" name="range" >
+    
+    <label for="color">Color</label>
+    <input id="color" type="color" name="color" >
+
+    <!-- TEXT AREA -->
+    <h1>Text Area</h1>
+    <label for="textarea">Text Area</label>
+    <textarea id="textarea" name="textarea" rows="4" cols="50">This is a text area, it's not a self closing tag.</textarea>
+  
+    <!-- DROPDOWNS -->
+    <h1>Dropdown</h1>
+    <label for="dropdown">Dropdown</label>
+    <select id="dropdown" name="dropdown">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+
+    <!-- Button -->
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
